@@ -13,7 +13,10 @@ function App() {
 const addValue=()=>{
   console.log("Value added",counter);
   // counter=counter+1;
-  setCounter(counter+1)
+  setCounter(prevCounter=>prevCounter+1)
+  setCounter(prevCounter=>prevCounter+1)
+  setCounter(prevCounter=>prevCounter+1)
+  setCounter(prevCounter=>prevCounter+1)
 }
 const removevalue=()=>{
   console.log("Value remove",counter);
